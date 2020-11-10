@@ -185,6 +185,54 @@ def perceptron(Tr, yTr, Te = None):
         return ytest.astype(int)
 
 
+
+#pca class
+class Pca:
+    def __init(self):
+        pass
+
+ 
+    def fit(self,Xtrain,cut_off=-1):
+        self.cov=np.cov(Xtrain.T)
+        e_val,e_vec=np.linalg.eig(self.cov)
+        ordered=[]
+        for x in range(e_val.shape[0]):
+            ordered.append((e_val[x],e_vec[:,x]))
+        ordered=sorted(ordered, key=lambda x: x[0])
+        if cut_off==-1:
+            count=len(ordered)-1
+            t=0
+            for x in range(count):
+                t=t+ordered[x][0]
+            self.error=t/np.sum(e_val)
+            ordered.reverse()
+            vectors=[y for (x,y) in ordered]
+            vectors=np.vstack(vectors).T
+            self.w=vectors[:,0:1]
+
+        else:
+            sum1=np.sum(e_val)
+            counter=1
+            temp=ordered[0][0]/sum1
+            while temp<cut_off and counter<len(ordered):
+                temp=temp+ordered[counter][0]/sum1
+                counter+=1
+            pca_count=counter-1
+            ordered.reverse()
+            vectors=[y for (x,y) in ordered]
+            vectors=np.vstack(vectors).T
+            temp=len(ordered)-pca_count
+            self.needed_dims=temp
+            self.w= vectors[:,0:temp]
+        proj=np.dot(self.w.T,Xtrain.T)
+        return proj
+    
+    def reduce(self,Xtest):
+        proj_test=np.dot(self.w.T,Xtest.T).T
+        return proj_test
+        
+    
+
 def main(): 
     # read in the datasets
     Xtrain, ytrain = load_data("python/datasets/synth.tr")
