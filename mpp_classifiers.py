@@ -5,7 +5,8 @@
 import numpy as np
 import sys
 import time
-
+import decimal
+import math
 
 def euc(x, y):
     # calculate squared Euclidean distance
@@ -128,7 +129,11 @@ def mpp(Tr, yTr, Te, cases, P):
                 disc[c] = -mdist2 / 2 + np.log(P[c] + 0.000001)
             elif cases == 3:
                 mdist2 = mah(means[c], Te[i], covs[c])
-                disc[c] = -mdist2 / 2 - np.log(np.linalg.det(covs[c])) / 2 + np.log(P[c] + 0.000001)
+                temp=[]
+                temp=np.linalg.slogdet(covs[c])
+                temp2=np.asarray([decimal.Decimal(el) for el in temp], dtype=object)
+                det=temp2[0]*np.exp(temp2[1])
+                disc[c] = -mdist2 / 2 - float(det.ln()) / 2 + np.log(P[c] + 0.000001)
             else:
                 print("Can only handle case numbers 1, 2, 3.")
                 sys.exit(1)
