@@ -6,7 +6,6 @@ import numpy as np
 import sys
 import time
 import decimal
-import math
 
 def euc(x, y):
     # calculate squared Euclidean distance
