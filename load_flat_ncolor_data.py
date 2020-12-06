@@ -54,6 +54,6 @@ def load_data_and_convert(path, n_colors):
     return train_flat_2colors, test_flat_2colors, labels_tr, labels_te
 
 # example use:
-path = './data/shipsnet.json'
-n_colors = 2
-train, test, labels_tr, labels_te = load_data_and_convert(path, n_colors)
+#path = './data/shipsnet.json'
+#n_colors = 2
+#train, test, labels_tr, labels_te = load_data_and_convert(path, n_colors)
