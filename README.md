@@ -2,13 +2,14 @@
 #### Authors: Alice Townsend, Jean Merlet, Matt Lane, Luke Koch
 ### Files: 
 - Notebooks
+  - clustering_methods.ipynb 
+  - fusion.ipynb
+  - randomForestandBPNN.ipynb
   - mpp.ipynb 
   - fld.ipynb 
   - sota_cnn.ipynb
-  - clustering_methods.ipynb
-  - fusion.ipynb
-  - mpp_classifiers.py  
 - Scripts
+  - mpp_classifiers.py
   - load_ship_data.py 
   - load_flat_ncolor_data.py 
 
