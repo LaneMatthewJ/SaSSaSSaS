@@ -17,8 +17,11 @@
 #### Instructions:
 ### Data Loading:
 Navigate to https://www.kaggle.com/rhammell/ships-in-satellite-imagery
+
 Download the data
+
 Place the shipsnet.json file in a folder named data
+
 Enjoy
 ### Navigation
 The code that generated the results in our pdf is contained in the above files.
