@@ -1,4 +1,12 @@
 # SaSSaSSaS
+# Authors: Alice Townsend, Jean Merlet, Matt Lane, Luke Koch
+# Files: 
+
+# Instructions: 
+The code that generated the results in our pdf is contained in the above files.
+To verify our results, select the Jupyter Notebook whose name matches the algorithm results you wish to verify.
+Any local .py files we imported are included as well.
+
 
 #### Requirement
 
