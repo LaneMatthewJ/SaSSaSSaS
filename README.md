@@ -2,15 +2,17 @@
 #### Authors: Alice Townsend, Jean Merlet, Matt Lane, Luke Koch
 ### Files: 
 - Notebooks
- -- mpp.ipynb 
--- fld.ipynb 
--- sota_cnn.ipynb
--- clustering_methods.ipynb
--- fusion.ipynb
--- mpp_classifiers.py  
--Scripts
---load_ship_data.py 
---load_flat_ncolor_data.py 
+  - SVM & KNN.ipynb
+  - clustering_methods.ipynb 
+  - fusion.ipynb
+  - randomForestandBPNN.ipynb
+  - mpp.ipynb 
+  - fld.ipynb 
+  - sota_cnn.ipynb
+- Scripts
+  - mpp_classifiers.py
+  - load_ship_data.py 
+  - load_flat_ncolor_data.py 
 
 #### Instructions: 
 The code that generated the results in our pdf is contained in the above files.
