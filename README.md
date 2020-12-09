@@ -8,9 +8,9 @@
   - clustering_methods.ipynb
   - fusion.ipynb
   - mpp_classifiers.py  
--Scripts
-  -load_ship_data.py 
-  -load_flat_ncolor_data.py 
+- Scripts
+  - load_ship_data.py 
+  - load_flat_ncolor_data.py 
 
 #### Instructions: 
 The code that generated the results in our pdf is contained in the above files.
