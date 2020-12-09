@@ -20,7 +20,7 @@ Navigate to https://www.kaggle.com/rhammell/ships-in-satellite-imagery
 
 Download the data
 
-Place the shipsnet.json file in a folder named data
+Place the shipsnet.json file in a folder named data that is in the same folder as the notebooks
 
 Enjoy
 ### Navigation
