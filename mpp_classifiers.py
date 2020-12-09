@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
+# used (slightly modified) Dr. Qi's MPP code
 import numpy as np
 import sys
 import time
