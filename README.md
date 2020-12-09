@@ -2,6 +2,7 @@
 #### Authors: Alice Townsend, Jean Merlet, Matt Lane, Luke Koch
 ### Files: 
 - Notebooks
+  - SVM & KNN.ipynb
   - clustering_methods.ipynb 
   - fusion.ipynb
   - randomForestandBPNN.ipynb
