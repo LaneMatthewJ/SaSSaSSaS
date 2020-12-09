@@ -14,10 +14,17 @@
   - load_ship_data.py 
   - load_flat_ncolor_data.py 
 
-#### Instructions: 
+#### Instructions:
+### Data Loading:
+Navigate to https://www.kaggle.com/rhammell/ships-in-satellite-imagery
+Download the data
+Place the shipsnet.json file in a folder named data
+Enjoy
+### Navigation
 The code that generated the results in our pdf is contained in the above files.
 To verify our results, select the Jupyter Notebook whose name matches the algorithm results you wish to verify.
 Any local .py files we imported are included as well.
+Be sure to check that the data is placed where the notebook expects it.
 
 
 #### Requirement
